@@ -7,21 +7,31 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is your project title? (Required)',
+        message: 'What is your project title?',
     },
     // Description of the project
     {
         type: 'input',
         name: 'description',
-        message: 'What is the projects description? (Required)',
+        message: 'What is the projects description?',
     },
     // Installation Instructions
     {
         type: 'input',
         name: 'installation',
         message: 'What are the steps for installation?',
-
+    },
+    // Usage info
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'What is the usage information?'
+    },
+    // Contribution Guidelines
+    {
+      
     }
+
 
     
 ];
