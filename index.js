@@ -19,18 +19,32 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps for installation?',
+        message: 'What are the instructions for installation?',
     },
     // Usage info
     {
         type: 'input',
         name: 'usage',
-        message: 'What is the usage information?'
+        message: 'What is the usage information for this project?'
     },
     // Contribution Guidelines
     {
-      
-    }
+      type: 'input',
+      name: 'guidelines',
+      message: 'What are the contribution guidelines for this project?'
+    },
+    // Test Instructions
+    {
+        type: 'input',
+        name: 'testing',
+        message: 'What are the test instructions for this project?'
+    },
+    // License Options
+    {
+        type: 'list',
+        name: 'licensing',
+        message: 'What license is your project using?'
+    },
 
 
     
