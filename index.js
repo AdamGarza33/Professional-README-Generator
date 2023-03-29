@@ -45,7 +45,18 @@ const questions = [
         name: 'licensing',
         message: 'What license is your project using?'
     },
-
+    // GitHub Username
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your GitHub?'
+    },
+    // GitHub Email Address 
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your GitHub email address?'
+    }
 
     
 ];
