@@ -17,6 +17,20 @@ const questions = [
             }
         }
     },
+    // Description of the project
+    {
+        type: 'input',
+        name: 'description',
+        message: 'What is the projects description? (Required)',
+        validate: descriptionInput => {
+            if (descriptionInput) {
+                return true;
+            } else {
+                console.log('You need to provide a project description.');
+                return false;
+            }
+        }
+    },
 
     
 ];
