@@ -64,23 +64,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data);
-};
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data);
+// };
+
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions).then((answers) => {
-        console.log(answers);
-        generateMarkdown(answers);
+        fs.writeFile('README.md', generateMarkdown(answers), (err) => {
+            if (err) {
+                console.error(err);
+            } else {
+                console.log('File saved successfully')
+            }
+        })
     })
-    .catch((error) => {
-        if(error.isTtyError){
-            console.log('Prompt could not be rendered');
-        } else {
-            console.log('Something went wrong!');
-        }
-    });
 }
 // Function call to initialize app
 init();
