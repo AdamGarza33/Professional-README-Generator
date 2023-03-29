@@ -34,12 +34,49 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = '';
-  // If license is selected creates license section
+  // If license is selected creates license section w/ link to the license
+  if (license != 'None') {
+    licenseSection += '## License\n'
+    licenseSection += `Please see ${renderLicenseLink(license)} to get detailed information for this license\n`;
+  }
+  return licenseSection;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+
   return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
+  
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  ${renderLicenseLink(date.license)}
+  - [Contributing](#contributing)
+  - [Test](#Test)
+  - [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage 
+${data.usage}
+
+${renderLicenseSection(data.license)}
+
+## Contributing
+${data.contributing}
+
+## Test
+${data.test}
+
+## Questions
+If you have any questions, please email me at ${data.email}
+
+Find me on Github: ${data.username}(https://github.com/${data.username})
 
 `;
 }
