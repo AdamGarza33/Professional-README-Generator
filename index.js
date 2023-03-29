@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
     // Projects Name
@@ -43,7 +44,8 @@ const questions = [
     {
         type: 'list',
         name: 'licensing',
-        message: 'What license is your project using?'
+        message: 'What license is your project using?',
+        choices: ['MIT', 'Microsoft Public License', 'ISC']
     },
     // GitHub Username
     {
