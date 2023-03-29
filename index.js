@@ -62,7 +62,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data);
+};
 // TODO: Create a function to initialize app
 
 // Function call to initialize app
