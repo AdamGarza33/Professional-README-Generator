@@ -8,29 +8,20 @@ const questions = [
         type: 'input',
         name: 'title',
         message: 'What is your project title? (Required)',
-        validate: titleInput => {
-            if(titleInput) {
-                return true;
-            } else {
-                console.log('A title is required to continue.');
-                return false;
-            }
-        }
     },
     // Description of the project
     {
         type: 'input',
         name: 'description',
         message: 'What is the projects description? (Required)',
-        validate: descriptionInput => {
-            if (descriptionInput) {
-                return true;
-            } else {
-                console.log('You need to provide a project description.');
-                return false;
-            }
-        }
     },
+    // Installation Instructions
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps for installation?',
+
+    }
 
     
 ];
