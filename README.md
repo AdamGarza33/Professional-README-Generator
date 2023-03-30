@@ -18,6 +18,8 @@ After cloning this project please use: npm install to install the project.
 ## Usage 
 To run the application type node inedex.js in the projects root directory.
 
+Here is a video walkthrough of the application: https://drive.google.com/file/d/1yeKd5kGIGbPHwptns_Zw6Ljnpruvznyz/view?usp=share_link
+
 ## License
 Please see  to get detailed information for this license
 
